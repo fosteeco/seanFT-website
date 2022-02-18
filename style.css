@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --white: hsl(0, 0%, 100%);
+  --card-bg: hsl(216, 50%, 16%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
 
 * {
   box-sizing: border-box;
@@ -27,6 +36,12 @@ header h1 {
   font-family: 'Shizuru', Arial, Helvetica, sans-serif;
   font-size: 5rem;
   text-align: center;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .nft-card-container {
@@ -145,26 +160,127 @@ main {
   align-items: center;
 }
 
+.nft-link-container {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px #000 solid;
+}
+
 .btn {
   background-color: #000;
+  display: block;
+  margin: 10px 0;
   text-align: center;
   width: fit-content;
   border-radius: 10px;
   padding: 5px 10px;
+  width: 100%;
 }
 
-a.btn {
+a.white {
   color: #fff;
 }
-a.btn:link {
+a.white:link {
   color: #fff;
 }
-a.btn:visited {
+a.white:visited {
   color: #fff;
 }
-a.btn:hover {
+a.white:hover {
   color: #b1b1b1;
 }
-a.btn:active {
+a.white:active {
   color: #b1b1b1;
+}
+
+a.no-underline {
+  text-decoration: none;
+}
+
+hr.soft-blue {
+  border-color: var(--soft-blue);
+}
+
+.nft-title {
+  margin-top: 0;
+}
+
+.nft-card > * {
+  margin-bottom: 20px;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nft-card {
+  background-color: var(--main-bg);
+  color: var(--white);
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px !important;
+}
+
+.nft-description {
+  color: var(--soft-blue);
+}
+
+.nft-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-container {
+  color: hsl(178, 100%, 50%);
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+}
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+}
+
+.author-name {
+  color: var(--white);
+}
+
+.avatar-img {
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 100%;
+  border: #fff 1px solid;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--soft-blue);
+}
+.attribution a {
+  color: var(--white);
 }
