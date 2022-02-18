@@ -44,6 +44,31 @@ header h1 {
   flex-direction: column;
 }
 
+.nft-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contract-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-elillipsis {
+  text-overflow: ellipsis;
+}
+
+.nft-description,
+.token-info {
+  color: var(--soft-blue);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .nft-card-container {
   border-radius: 10px;
   box-shadow: -1px 1px 12px 5px rgba(0, 0, 0, 0.33);
@@ -152,12 +177,9 @@ main {
   font-size: 1.5rem;
 }
 
-.nft-card-container {
+.nft-card {
   display: flex;
-  max-width: 600px;
-  padding: 100px 0;
   flex-direction: column;
-  align-items: center;
 }
 
 .nft-link-container {
@@ -230,13 +252,13 @@ body {
   margin-bottom: 5px !important;
 }
 
-.nft-description {
-  color: var(--soft-blue);
-}
-
 .nft-info {
   display: flex;
   justify-content: space-between;
+}
+
+.nft-card-footer {
+  margin-top: auto;
 }
 
 .price-container {
@@ -266,14 +288,6 @@ body {
   border: #fff 1px solid;
 }
 
-main {
-  display: flex;
-  height: 100vh;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-}
-
 .attribution {
   position: fixed;
   bottom: 0;
@@ -283,4 +297,34 @@ main {
 }
 .attribution a {
   color: var(--white);
+}
+
+.tooltip {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
 }

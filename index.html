@@ -6,50 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
-
     <title>Sean Birthday NFT</title>
   </head>
   <body>
     <header>
-      <h1>SEAN'S NFT</h1>
+      <h1>SEAN'S NFTS</h1>
     </header>
     <main>
-      <div class="nft-card">
-        <img
-          src="./sean-presley-unstoppable-domains-graphic.svg"
-          alt=""
-          class="nft-img"
-        />
-        <h2 class="nft-title">Sean Presley .NFT Domain</h2>
-        <div class="nft-description">A blockchain domain name</div>
-        <div class="nft-info">
-          <div class="price-container">
-            <img src="./icon-ethereum.svg" alt="" />
-            <span>??? ETH</span>
+      <div class="nft-cards">
+        <div class="nft-card">
+          <img
+            src="./sean-presley-unstoppable-domains-graphic.svg"
+            alt=""
+            class="nft-img"
+          />
+          <h2 class="nft-title">Sean Presley .NFT Domain</h2>
+          <div class="nft-description">
+            A blockchain domain name
+            <div class="contract-info">
+              Contract Address:
+              <span class="nft-contract-address overflow-elillipsis">
+                <a
+                  target="_blank"
+                  class="white"
+                  href="https://polygonscan.com/address/0xa9a6a3626993d487d2dbda3173cf58ca1a9d9e9f"
+                  target="_blank"
+                  >0xa9a6A3626993D487d2Dbda3173cf58cA1a9D9e9f</a
+                >
+              </span>
+            </div>
+            <div class="token-info">
+              Token ID:
+              <span
+                class="token-id overflow-elillipsis copy-click"
+                aria-describedby="tooltip"
+              >
+                33969455422772231362251810138306836589814412404737794561577891677257683068102
+              </span>
+              <div class="d-none tooltip" role="tooltip">
+                Copied!
+                <div class="arrow" data-popper-arrow></div>
+              </div>
+            </div>
           </div>
-          <div class="date-container">
-            <img src="./icon-clock.svg" alt="" />
-            <span>Not for Auction</span>
+          <div class="nft-card-footer">
+            <div class="nft-info">
+              <div class="price-container">
+                <img src="./icon-ethereum.svg" alt="" />
+                <span>??? ETH</span>
+              </div>
+              <div class="date-container">
+                <img src="./icon-clock.svg" alt="" />
+                <span>Not for Auction</span>
+              </div>
+            </div>
+            <hr class="soft-blue" />
+            <div class="owner-info">
+              <img
+                src="./unstoppable-domains-browser-icon.svg"
+                alt=""
+                class="avatar-img"
+              />
+              <span
+                >Minted at
+                <span class="author-name"
+                  ><a
+                    class="white no-underline"
+                    href="https://unstoppabledomains.com/?ref=c4a24c9bffee499"
+                    target="_blank"
+                  >
+                    Unstoppable Domains</a
+                  ></span
+                ></span
+              >
+            </div>
           </div>
         </div>
-        <hr class="soft-blue" />
-        <div class="owner-info">
-          <img
-            src="./unstoppable-domains-browser-icon.svg"
-            alt=""
-            class="avatar-img"
-          />
-          <span
-            >Minted at
-            <span class="author-name"
-              ><a
-                class="white no-underline"
-                href="https://unstoppabledomains.com/?ref=c4a24c9bffee499"
+        <div class="nft-card">
+          <img src="./sea-nft.jpg" alt="" class="nft-img" />
+          <h2 class="nft-title">SeanFT</h2>
+          <div class="nft-description">
+            An ape made by Pat. A birthday gift
+
+            <div class="contract-info">
+              Contract Address:
+              <span class="nft-contract-address overflow-elillipsis">
+                <a
+                  target="_blank"
+                  class="white"
+                  href="https://polygonscan.com/address/0x2953399124f0cbb46d2cbacd8a89cf0599974963"
+                  >0x2953399124F0cBB46d2CbACD8A89cF0599974963</a
+                >
+              </span>
+            </div>
+            <div class="token-info">
+              Token ID:
+              <span
+                class="token-id overflow-elillipsis copy-click"
+                aria-describedby="tooltip"
               >
-                Unstoppable Domains</a
-              ></span
-            ></span
-          >
+                46641247473692767178829134499256126202425159000299310331786900538399890866177
+              </span>
+              <div class="d-none tooltip" role="tooltip">
+                Copied!
+                <div class="arrow" data-popper-arrow></div>
+              </div>
+            </div>
+          </div>
+          <div class="nft-card-footer">
+            <div class="nft-info">
+              <div class="price-container">
+                <img src="./icon-ethereum.svg" alt="" />
+                <span>??? ETH</span>
+              </div>
+              <div class="date-container">
+                <img src="./icon-clock.svg" alt="" />
+                <span>Not for Auction</span>
+              </div>
+            </div>
+            <hr class="soft-blue" />
+            <div class="owner-info">
+              <img src="./open-sea-logo.svg" alt="" class="avatar-img" />
+              <span
+                >Minted at
+                <span class="author-name"
+                  ><a
+                    class="white no-underline"
+                    target="_blank"
+                    href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/46641247473692767178829134499256126202425159000299310331786900538399890866177"
+                  >
+                    OpenSea</a
+                  ></span
+                ></span
+              >
+            </div>
+          </div>
         </div>
       </div>
       <div div class="info">
@@ -63,17 +154,22 @@
           >
           <p>
             (Need a supported browser to follow this link:
-            <a href="https://unstoppabledomains.com/?ref=c4a24c9bffee499"
+            <a
+              target="_blank"
+              href="https://unstoppabledomains.com/?ref=c4a24c9bffee499"
               >Read MORE</a
             >)
           </p>
         </div>
         <a
           class="btn white"
+          target="_blank"
           href="https://opensea.io/assets/matic/0xa9a6a3626993d487d2dbda3173cf58ca1a9d9e9f/33969455422772231362251810138306836589814412404737794561577891677257683068102"
           >OpenSea NFT Domain</a
         >
       </div>
     </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="script.js"></script>
   </body>
 </html>
