@@ -46,10 +46,4 @@ toolTips.forEach((tooltip) => {
     placement: "top-start",
   });
   popperInstances.push(popperInstance);
-  console.log(
-    "popperInstance :",
-    popperInstance.state.elements.reference.innerText
-  );
 });
-
-console.log(popperInstances);
